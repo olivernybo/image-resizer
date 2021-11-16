@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+  </head>
+  <body>
+	<label for="files">Select files:</label>
+	<br>
+	<input type="file" id="files" name="files" multiple />
+	<br>
+	<label">Width</label>
+	<br>
+	<input type="number" id="width" value="1024">
+	<br>
+	<label">Height</label>
+	<br>
+	<input type="number" id="height" value="1024">
+	<br>
+	<button id="submit">Resize</button>
+  </body>
+  <script src="js/sendToMain.js"></script>
+</html>
