@@ -4,13 +4,16 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl"
   },
   "keywords": [],
   "author": "Oliver Nybo",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^16.0.0"
+    "electron": "^16.0.0",
+    "electron-builder": "^22.13.1"
   },
   "dependencies": {
     "sharp": "^0.29.3"
